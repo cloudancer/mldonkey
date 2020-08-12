@@ -18,8 +18,10 @@ Your data will be available under data/incoming directory where you run the dock
 
 then you can access it like http://127.0.0.1:4080
 
-user:admin 
+user:admin
+
 password: Passw0rd
-(you can chagne it at Dockerfile when you build ur image)
+
+(you can chagne it in Dockerfile when you build ur image)
 
 ![alt text](https://github.com/cloudancer/mldonkey/blob/master/d.png)
