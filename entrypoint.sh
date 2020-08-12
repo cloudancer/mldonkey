@@ -27,6 +27,10 @@ if [ ! -f /var/lib/mldonkey/downloads.ini ]; then
     /usr/lib/mldonkey/mldonkey_command -p "" "set create_file_mode 664" "save"
     /usr/lib/mldonkey/mldonkey_command -p "" "set create_dir_mode 775" "save"
     /usr/lib/mldonkey/mldonkey_command -p "" "set create_file_sparse true" "save"
+    /usr/lib/mldonkey/mldonkey_command -p "" "urladd server.met http://ed2k.2x4u.de/v1s4vbaf/min/server.met" "save"
+    /usr/lib/mldonkey/mldonkey_command -p "" "urladd guarding.p2p http://upd.emule-security.org/ipfilter.zip" "save"
+    /usr/lib/mldonkey/mldonkey_command -p "" "urladd geoip.dat https://mirrors.download3k.com/token/a4f5830bcd49fec1856557a9204eacb7/GeoIP.dat.gz" "save"
+    /usr/lib/mldonkey/mldonkey_command -p "" "urladd hublist http://dchublist.com/hublist.config.bz2" "save"
     if [ -z "$MLDONKEY_ADMIN_PASSWORD" ]; then
         /usr/lib/mldonkey/mldonkey_command -p "" "kill"
     else
