@@ -41,4 +41,4 @@ $ docker run -d \
 -v "~/data:/mnt/mldonkey_completed" \
 mldonkey
 
-Your data will be available under data/incoming directory where you run the docker run command.
+Your download data will be available under ~/data directory.
