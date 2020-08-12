@@ -8,11 +8,13 @@ This repository host the Dockerfile for building mldonkey docker image.
 
 To run mldonkey using this image:
 
-$ docker run -d --name donkey -p 4080:4080 -p 6881:6881 -p 6882:6882 hiluo/mldonkey
+$ docker build -t mldonkey .   # then you docker image tag is mldonkey:latest
+
+$ docker run -d --name donkey -p 4080:4080 -p 6881:6881 -p 6882:6882 mldonkey
 
 mldonkey stores data inside /var/lib/mldonkey. You may want to mount the data directory to local filesystem. Doing this will persist the data when you re-create the docker container. It is also easier to get downloaded files this way.
 
-$ docker run -d -p 4080:4080 -p 6881:6881 -p 6882:6882 -v "`pwd`/data:/var/lib/mldonkey" hiluo/mldonkey
+$ docker run -d -p 4080:4080 -p 6881:6881 -p 6882:6882 -v "~/data:/var/lib/mldonkey" mldonkey
 
 Your data will be available under data/incoming directory where you run the docker run command.
 
