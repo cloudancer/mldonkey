@@ -1,5 +1,5 @@
-# mldonkey
-mldonkey 3.1.6 on ubuntu 20.04
+# mldonkey docker
+env:  mldonkey 3.1.6 on ubuntu 20.04
 
 
 This repository host the Dockerfile for building mldonkey docker image.
@@ -15,3 +15,4 @@ $ docker run -d -p 4080:4080 -p 6881:6881 -p 6882:6882 -v "`pwd`/data:/var/lib/m
 Your data will be available under data/incoming directory where you run the docker run command.
 
 then you can access it like http://127.0.0.1:4080
+user:admin password: Passw0rd(you can chagne it at Dockerfile when you build ur image)
