@@ -22,7 +22,7 @@ password: Passw0rd
 
 (you can chagne it in Dockerfile when you build ur image)
 
-![alt text](https://github.com/cloudancer/mldonkey/blob/master/d.png)
+![image](https://github.com/cloudancer/mldonkey/blob/master/d.png)
 
 mldonkey stores data inside /mnt/mldonkey_completed. You may want to mount the data directory to local filesystem. 
 
